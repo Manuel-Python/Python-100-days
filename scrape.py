@@ -37,3 +37,7 @@ print(section_heading.get("class"))
 
 company_url = soup.select_one(selector="#name")
 print(company_url)
+
+para = soup.find_all("p")
+for item in para:
+    print(item.text)
